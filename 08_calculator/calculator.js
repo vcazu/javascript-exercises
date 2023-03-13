@@ -6,7 +6,18 @@ const subtract = function (aOper, bOper) {
   return +aOper - +bOper;
 };
 
-const sum = function () {};
+const sum = function (props) {
+  let sum = 0;
+  if (!props.length) {
+    return sum;
+  }
+
+  for (let i = 0; i < props.length; i++) {
+    sum += props[i];
+  }
+
+  return sum;
+};
 
 const multiply = function () {};
 
