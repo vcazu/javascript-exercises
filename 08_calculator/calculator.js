@@ -1,25 +1,33 @@
 const add = function (aOper, bOper) {
-  return +aOper + +bOper;
+  return aOper + bOper;
 };
 
 const subtract = function (aOper, bOper) {
-  return +aOper - +bOper;
+  return aOper - bOper;
 };
 
-const sum = function (props) {
+const sum = function (args) {
   let sum = 0;
-  if (!props.length) {
+  if (!args.length) {
     return sum;
   }
 
-  for (let i = 0; i < props.length; i++) {
-    sum += props[i];
+  for (let i = 0; i < args.length; i++) {
+    sum += args[i];
   }
 
   return sum;
 };
 
-const multiply = function () {};
+const multiply = function (args) {
+  let product = 1;
+
+  for (let i = 0; i < args.length; i++) {
+    product *= args[i];
+  }
+
+  return product;
+};
 
 const power = function () {};
 
