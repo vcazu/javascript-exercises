@@ -33,7 +33,15 @@ const power = function (aOper, bOper) {
   return aOper ** bOper;
 };
 
-const factorial = function () {};
+const factorial = function (arg) {
+  let product = 1;
+
+  for (; arg > 0; arg--) {
+    product *= arg;
+  }
+
+  return product;
+};
 
 // Do not edit below this line
 module.exports = {
